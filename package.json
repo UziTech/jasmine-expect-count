@@ -1,0 +1,29 @@
+{
+  "name": "jasmine-expect-count",
+  "version": "1.0.0",
+  "description": "Make sure all your expects are getting checked",
+  "repository": "https://github.com/UziTech/jasmine-expect-count",
+  "main": "src/jasmine-expect-count.js",
+  "scripts": {
+    "test": "jasmine ./spec/*-spec.js",
+    "release": "test-tag-publish",
+    "release:patch": "test-tag-publish patch",
+    "release:minor": "test-tag-publish minor",
+    "release:major": "test-tag-publish major"
+  },
+  "keywords": [
+    "jasmine",
+    "expect",
+    "count"
+  ],
+  "author": "Tony Brix",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "2.x",
+    "jasmine-should-fail": "^1.0.2",
+    "test-tag-publish": "*"
+  },
+  "peerDependencies": {
+    "jasmine": "2.x"
+  }
+}
