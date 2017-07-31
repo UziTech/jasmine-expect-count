@@ -3,6 +3,8 @@
 
 # Jasmine Expect Count
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/UziTech/jasmine-expect-count.svg)](https://greenkeeper.io/)
+
 Lets you specify the number of expects expected to be called.
 
 ## Installing
