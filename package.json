@@ -20,7 +20,7 @@
   "license": "MIT",
   "devDependencies": {
     "jasmine": "2.x",
-    "jasmine-should-fail": "^1.0.2",
+    "jasmine-should-fail": "^1.0.3",
     "test-tag-publish": "*"
   },
   "peerDependencies": {
