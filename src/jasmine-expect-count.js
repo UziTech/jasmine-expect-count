@@ -35,7 +35,7 @@
 
 		if (typeof origFunc === "function") {
 			args[1] = function () {
-				var origReturn = origFunc.call(this);
+				var origReturn = origFunc.apply(this, arguments);
 				if (origReturn && origReturn.then) {
 					origReturn = origReturn.then(function () {
 						if (expectedExpects !== null && numExpects !== expectedExpects) {
