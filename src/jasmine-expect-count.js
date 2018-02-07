@@ -9,7 +9,8 @@
 	var numExpects = 0;
 	var expectedExpects = null;
 	global.jasmine.expectCount = function (num) {
-		if ((typeof num !== "number" && !isNaN(num)) || num < 0) {
+		num = parseInt(num);
+		if (isNaN(num) || num < 0) {
 			throw new Error("jasmine.expectCount expects a number >= 0 as the first argument.");
 		}
 
