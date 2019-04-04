@@ -1,10 +1,28 @@
 language: node_js
-sudo: false
-node_js:
-  - "4"
-  - "lts/*"
-  - "node"
-install:
-  - npm install
-script:
-  - npm test
+
+install: npm install
+
+jobs:
+  include:
+    - stage: spec tests 👩🏽‍💻
+      script: npm run test
+      node_js: 4
+    - node_js: lts/*
+    - node_js: node
+
+    - stage: lint ✨
+      script: npm run lint
+      node_js: lts/*
+
+
+    - stage: release 🎉
+      if: branch = master && type != pull_request
+      script: npm run semantic-release
+      node_js: lts/*
+
+cache:
+  directories:
+    - node_modules
+
+git:
+  depth: 3

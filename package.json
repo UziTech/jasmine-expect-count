@@ -6,10 +6,8 @@
   "main": "src/jasmine-expect-count.js",
   "scripts": {
     "test": "jasmine ./spec/*-spec.js",
-    "release": "test-tag-publish",
-    "release:patch": "test-tag-publish patch",
-    "release:minor": "test-tag-publish minor",
-    "release:major": "test-tag-publish major"
+    "lint": "eslint .",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "jasmine",
@@ -19,9 +17,16 @@
   "author": "Tony Brix",
   "license": "MIT",
   "devDependencies": {
-    "jasmine": "~3.4.0",
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/git": "^7.0.8",
+    "@semantic-release/github": "^5.2.10",
+    "@semantic-release/npm": "^5.1.4",
+    "@semantic-release/release-notes-generator": "^7.1.4",
+    "eslint": "^5.16.0",
+    "jasmine": "^3.4.0",
     "jasmine-should-fail": "^1.1.6",
-    "test-tag-publish": "*"
+    "semantic-release": "^15.13.3"
   },
   "peerDependencies": {
     "jasmine": ">=2 <4"
