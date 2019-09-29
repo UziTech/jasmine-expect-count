@@ -23,7 +23,7 @@
     "@semantic-release/github": "^5.4.3",
     "@semantic-release/npm": "^5.1.15",
     "@semantic-release/release-notes-generator": "^7.3.0",
-    "eslint": "^6.4.0",
+    "eslint": "^6.5.0",
     "jasmine": "^3.5.0",
     "jasmine-should-fail": "^1.1.7",
     "semantic-release": "^15.13.24"
