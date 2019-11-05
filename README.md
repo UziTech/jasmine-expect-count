@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/UziTech/jasmine-expect-count.png)](https://travis-ci.org/UziTech/jasmine-expect-count)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/t8ooplfs8100yc66?svg=true)](https://ci.appveyor.com/project/UziTech/jasmine-expect-count)
+[![Build Status](https://travis-ci.org/UziTech/jasmine-expect-count.svg?branch=master)](https://travis-ci.org/UziTech/jasmine-expect-count)
+[![Windows Build Status](https://ci.appveyor.com/api/projects/status/t8ooplfs8100yc66/branch/master?svg=true)](https://ci.appveyor.com/project/UziTech/jasmine-expect-count)
 
 # Jasmine Expect Count
 
