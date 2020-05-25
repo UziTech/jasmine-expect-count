@@ -6,8 +6,7 @@
   "main": "src/jasmine-expect-count.js",
   "scripts": {
     "test": "jasmine ./spec/*-spec.js",
-    "lint": "eslint .",
-    "semantic-release": "semantic-release"
+    "lint": "eslint ."
   },
   "keywords": [
     "jasmine",
