@@ -18,6 +18,19 @@ describe("jasmine-expect-count", function () {
 		jasmine.expectCount(0);
 	});
 
+	it("should not throw error when expectCount is 0 with done", function (done) {
+		jasmine.expectCount(0);
+		setTimeout(done, 1);
+	});
+
+	it("should not throw error when expectCount is 1 with done", function (done) {
+		jasmine.expectCount(1);
+		setTimeout(function () {
+			expect(true).toBe(true);
+			done();
+		}, 1);
+	});
+
 	it("should not throw error when expectCount is > 0", function () {
 		jasmine.expectCount(1);
 		expect(true).toBe(true);
@@ -56,7 +69,7 @@ describe("jasmine-expect-count", function () {
 	zdescribe("failing tests", function () {
 
 		it("should throw error when expectCount is > the number of expects", function () {
-			jasmine.expectCount(2);
+			jasmine.expectCount(1);
 			expect(true);
 		});
 
@@ -68,6 +81,13 @@ describe("jasmine-expect-count", function () {
 			jasmine.expectCount(1);
 			expect(true);
 			expect(true);
+		});
+
+		it("should throw error with done", function (done) {
+			jasmine.expectCount(1);
+			setTimeout(function () {
+				done();
+			}, 1);
 		});
 
 		it("should fail when forgetting to return the promise", function () {
