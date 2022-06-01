@@ -3,7 +3,7 @@
 (function (global) {
 
 	if (!global.jasmine) {
-		throw new Error("jasmine must be loaded before jasmine2-focused");
+		throw new Error("jasmine must be loaded before jasmine-expect-count");
 	}
 
 	var numExpects = 0;
