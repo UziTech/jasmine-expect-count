@@ -23,11 +23,11 @@
     "@semantic-release/npm": "^10.0.3",
     "@semantic-release/release-notes-generator": "^11.0.1",
     "eslint": "^8.40.0",
-    "jasmine": "^3.99.0",
+    "jasmine": "^4.6.0",
     "jasmine-should-fail": "^1.1.7",
     "semantic-release": "^21.0.2"
   },
   "peerDependencies": {
-    "jasmine": ">=2 <4"
+    "jasmine": ">=2 <5"
   }
 }
