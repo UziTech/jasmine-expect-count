@@ -25,7 +25,7 @@
     "eslint": "^8.47.0",
     "jasmine": "^3.99.0",
     "jasmine-should-fail": "^1.1.7",
-    "semantic-release": "^21.1.0"
+    "semantic-release": "^21.1.1"
   },
   "peerDependencies": {
     "jasmine": ">=2 <4"
